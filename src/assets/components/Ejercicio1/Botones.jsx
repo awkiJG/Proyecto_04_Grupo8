@@ -1,3 +1,4 @@
+
 // Componente Botones: muestra el boton para rendirse
 function Botones({ rendirse, juegoTerminado }) {
   return (
@@ -8,6 +9,5 @@ function Botones({ rendirse, juegoTerminado }) {
     </button>
   );
 }
-
 //exporta el componente para usarse en otras partes
 export default Botones;

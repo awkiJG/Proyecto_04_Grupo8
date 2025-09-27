@@ -1,0 +1,68 @@
+.juegoColores-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.juegoColores-container h1 {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.juegoColores-container h2 {
+  color: #666;
+  margin: 20px 0;
+}
+
+.boton-reiniciar {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.boton-reiniciar:hover {
+  background-color: #0056b3;
+}
+
+.botones-container {
+  display: flex;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.botones-container button {
+  padding: 8px 16px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.botones-container button:hover {
+  background-color: #218838;
+}
+
+.color-button {
+  padding: 15px 20px;
+  margin: 5px;
+  border: 2px solid #333;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  color: white;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+  transition: transform 0.1s;
+}
+
+.color-button:hover {
+  transform: scale(1.05);
+}
