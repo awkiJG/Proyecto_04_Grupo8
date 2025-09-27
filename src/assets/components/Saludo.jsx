@@ -1,4 +1,5 @@
 import { useState } from "react";
+import "../Styles/Saludo.css";
 
 function Saludo() {
   const [nombres, setNombres] = useState([]);
@@ -21,8 +22,9 @@ function Saludo() {
     }
   };
   return (
-    <>
+    <div className="saludo-container">
       <input
+        className="input-nombre"
         type="text"
         value={nombreActual}
         onChange={handleInputChange}
@@ -31,9 +33,9 @@ function Saludo() {
       />
       <button onClick={handleAgregarNombre}>Agregar</button>
       {nombres.map((n, i) => (
-        <h1 key={i}>Hola {n}</h1>
+        <h1 key={i}>Hola React, soy {n}</h1>
       ))}
-    </>
+    </div>
   );
 }
 
