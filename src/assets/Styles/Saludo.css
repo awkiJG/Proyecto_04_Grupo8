@@ -1,0 +1,56 @@
+/* --- Estilos para el componente Saludo --- */
+.saludo-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+  padding: 24px 0;
+}
+
+.saludo-container h2,
+.saludo-container h1 {
+  color: #357ab8;
+  margin: 0 0 8px 0;
+  font-size: 1.7rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.saludo-container p {
+  color: #2d3a4a;
+  font-size: 1.1rem;
+  margin: 0;
+  text-align: center;
+}
+
+.saludo-container button {
+  margin-top: 10px;
+  padding: 8px 20px;
+  border-radius: 8px;
+  border: none;
+  background: #4a90e2;
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s, box-shadow 0.2s;
+  box-shadow: 0 2px 8px rgba(74,144,226,0.08);
+}
+
+.saludo-container button:hover:not(:disabled) {
+  background: #357ab8;
+}
+
+.saludo-container button:disabled {
+  background: #bfc9d1;
+  cursor: not-allowed;
+}
+
+.input-nombre {
+  padding: 8px 12px;
+  border-radius: 8px;
+  border: 1px solid #bfc9d1;
+  font-size: 1rem;
+  width: 200px;
+  outline: none;
+  transition: border 0.2s;
+}
