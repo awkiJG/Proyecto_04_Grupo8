@@ -1,6 +1,6 @@
 function ColoresBotones({ colorBotones, maneharClick }) {
     return(
-        <div>
+        <div className="color-buttones-container">
             {colorBotones.map((c, i) => (
               <button
                 key={i}

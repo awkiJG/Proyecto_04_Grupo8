@@ -23,6 +23,7 @@ function Saludo() {
   };
   return (
     <div className="saludo-container">
+      <h1>Saludo 👋</h1>
       <input
         className="input-nombre"
         type="text"
@@ -33,7 +34,7 @@ function Saludo() {
       />
       <button onClick={handleAgregarNombre}>Agregar</button>
       {nombres.map((n, i) => (
-        <h1 key={i}>Hola React, soy {n}</h1>
+        <h2 key={i}>Hola React, soy {n}</h2>
       ))}
     </div>
   );

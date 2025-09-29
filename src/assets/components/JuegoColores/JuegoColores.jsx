@@ -18,7 +18,7 @@ const colores = [
 
 function JuegoColores (){
     const [cantidadBotones, setCantidadBotones] = useState(2);
-    const [colorBotones, setColorBotones] = useState(colores.slice(0, cantidadBotones));    
+    const [colorBotones, setColorBotones] = useState(Array.from({ length: cantidadBotones }, () => colores[Math.floor(Math.random() * colores.length)]));    
     const [intentos, setIntentos] = useState(0)
     const [mensaje, setMensaje] = useState("")
     const [juegoTerminado, setJuegoTerminado] = useState(false)
@@ -46,7 +46,7 @@ function JuegoColores (){
     }, [intentos, colorBotones, juegoTerminado]);
 
     useEffect(() => {
-        setColorBotones(colores.slice(0, cantidadBotones));
+        setColorBotones(Array.from({ length: cantidadBotones }, () => colores[Math.floor(Math.random() * colores.length)]));    
         setIntentos(0);
         setMensaje("");
         setJuegoTerminado(false);
@@ -57,7 +57,7 @@ function JuegoColores (){
 
     return(
         <div className="juegoColores-container">
-            <h1> Juego de colores</h1>
+            <h1 > Juego de colores</h1>
                 <ControlarBotones cantidadBotones={cantidadBotones} setCantidadBotones={setCantidadBotones}/>
                 <ColoresBotones colorBotones={colorBotones} maneharClick={maneharClick}/>
                 <h2>{mensaje}</h2>

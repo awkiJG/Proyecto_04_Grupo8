@@ -63,7 +63,7 @@ function Ejercicio1() {
 
   return (
     <div className="adivinarNumero-container">
-      <h1>🎯 Adivina el Número</h1>
+      <h1>Adivina el Número</h1>
       <p>Ingresa un número entre 1 y 100</p>
       <Intentos intentos={intentos} />
       <EntradaNumero
@@ -79,8 +79,10 @@ function Ejercicio1() {
           manejarVerificar={manejarVerificar}
           reiniciarJuego={reiniciarJuego}
       />
+      { mensaje || error ?
       <Resultado mensaje={mensaje} error={error} />
-    </div>
+      : null } 
+      </div>
   );
 }
 
