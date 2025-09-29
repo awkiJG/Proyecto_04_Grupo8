@@ -21,12 +21,26 @@ body {
 }
 
 .box {
-  background: #fff;
   border-radius: 16px;
   box-shadow: 0 4px 16px rgba(0,0,0,0.08);
-  padding: 32px 40px;
-  min-width: 320px;
-  max-width: 90vw;
+  padding: 15px 25px;
   border: 1px solid #e0e0e0;
 }
+
+#adivinar-numero {
+  background: linear-gradient(135deg, #ff3f69 0%, #ef39ff 100%);
+}
+
+#juego-colores {
+    background: linear-gradient(135deg, #145ce0 0%, #03a6e7 100%);
+
+}
+
+#saludo {
+  background: linear-gradient(135deg, #fded08 0%, #ff9100 100%);
+}
+
+
+
+
 

@@ -7,13 +7,13 @@ function App() {
   return (
     <div className="app-container">
       <div className="content-column">
-        <div className="box">
+        <div className="box" id="saludo">
           <Saludo />
         </div>
-        <div className="box">
+        <div className="box" id="adivinar-numero">
           <AdivinarNumero />
         </div>
-        <div className="box">
+        <div className="box" id="juego-colores">
           <JuegoColores />
         </div>
       </div>
